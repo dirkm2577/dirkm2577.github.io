@@ -30,75 +30,167 @@
   </header>
 
   <main>
-    <header>
-      <div class="nav">
-        <div class="brand">Dirk Mischke</div>
-        <div>
-          <a href="#services">Services</a>
-          <a href="#iap">IAP</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </header>
-  
     <section class="hero">
-      <h1>Full Stack Software Engineering & Infrastructure Systems</h1>
-      <p class="lead">
-        Backend-focused engineer specializing in Python (Flask), API-first design, MySQL/MariaDB, and modern Vue/TypeScript applications.
-        Building production-grade systems and identity infrastructure for autonomous agents.
-      </p>
-      <a href="#contact" class="btn">Work with me</a>
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker"><span class="dot" aria-hidden="true"></span> Independent software engineer · Germany</div>
+          <h1>Production-grade software <span style="color: var(--muted); font-weight: 730;">for modern web systems</span></h1>
+          <p class="lede">
+            I build backend-heavy web applications, API-first platforms, and infrastructure tooling.
+            My core stack includes <strong>Python (Flask)</strong>, <strong>OpenAPI/Swagger</strong>, <strong>MySQL/MariaDB</strong>,
+            and modern frontend development with <strong>Vue + TypeScript</strong>.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#contact">Work with me</a>
+            <a class="btn" href="#iap">Identity Anchor Protocol</a>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Business details">
+          <h2>Business details</h2>
+          <div class="badge ok"><span class="dot" aria-hidden="true"></span> Available for projects</div>
+          <p>
+            Payments may be processed securely via Stripe. For details, see <a href="#pricing">pricing</a> and <a href="terms.html">terms</a>.
+          </p>
+          <hr class="sep" />
+          <p style="margin-top:0;">
+            <strong>Primary email:</strong><br/>
+            <a href="mailto:admin@ia-protocol.com">admin@ia-protocol.com</a>
+          </p>
+        </aside>
+      </div>
     </section>
-  
+
     <section id="services" class="section">
-      <h2>Services</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Software Development</h3>
-          <p>Design and implementation of scalable web applications, APIs, and database-driven systems.</p>
-        </div>
-        <div class="card">
-          <h3>Technical Consulting</h3>
-          <p>Architecture consulting for backend systems, API design, and AI-integrated services.</p>
-        </div>
-        <div class="card">
-          <h3>Developer Tooling</h3>
-          <p>Building SDKs, CLI tools, and verification workflows with strong testing discipline.</p>
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+
+        <div class="grid cards-3">
+          <div class="card">
+            <div class="meta">Software Development</div>
+            <h3>Backend & full stack implementation</h3>
+            <p>
+              Design and delivery of production web applications: REST APIs, database-driven systems,
+              frontend interfaces, integrations, refactors, and reliability improvements.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="meta">Technical Consulting</div>
+            <h3>Architecture & API design</h3>
+            <p>
+              Consulting on backend architecture, OpenAPI-first development,
+              data modeling, and pragmatic AI integrations.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="meta">Developer Tooling</div>
+            <h3>SDKs, CLIs & verification workflows</h3>
+            <p>
+              Building internal tools and developer-facing SDKs/CLIs with clear error handling,
+              predictable interfaces, and strong testing discipline.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-  
+
     <section id="iap" class="section">
-      <h2>Identity Anchor Protocol (IAP)</h2>
-      <div class="card">
-        <p>Cryptographic certificate issuance service for persistent autonomous agents. Identity, continuity, and lineage certificates verifiable offline.</p>
+      <div class="container">
+        <h2 class="section-title">Identity Anchor Protocol (IAP)</h2>
+        <p>
+          IAP provides cryptographic certificate issuance services for persistent autonomous agents, enabling verifiable identity and continuity over time.
+        </p>
+
+        <div class="grid cards-2" style="margin-top:1rem;">
+          <div class="card">
+            <div class="meta">What it is</div>
+            <h3>Identity & continuity primitives</h3>
+            <p>
+              Minimal primitives: Identity Anchor, Continuity Certificates, and Lineage declarations.
+              Certificates are digitally signed and verifiable offline using published registry keys.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="meta">How it works</div>
+            <h3>Pay-per-issuance, verifiable offline</h3>
+            <p>
+              Customers pay per certificate issuance. Once issued, a certificate becomes a verifiable cryptographic artifact.
+              See the quickstart below for a typical developer flow.
+            </p>
+          </div>
+        </div>
+
+        <div class="code" aria-label="Quickstart code sample">
+<pre><code>pip install iap-sdk
+iap-agent init
+iap-agent anchor issue
+iap-agent flow run
+iap-agent verify certificate.json</code></pre>
+        </div>
       </div>
     </section>
-  
+
     <section id="pricing" class="section">
-      <h2>Pricing (USD)</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Identity Anchor</h3>
-          <div class="price">$9</div>
+      <div class="container">
+        <h2 class="section-title">Pricing (USD)</h2>
+        <p>Simple, transparent, usage-based pricing during public beta.</p>
+
+        <div class="pricing">
+          <div class="card">
+            <div class="meta">Identity Anchor</div>
+            <div class="price">$9</div>
+            <p>Create a verifiable identity anchor for your agent.</p>
+          </div>
+
+          <div class="card">
+            <div class="meta">Continuity Certificate</div>
+            <div class="price">$3</div>
+            <p>Attest verifiable continuity over time.</p>
+          </div>
+
+          <div class="card">
+            <div class="meta">Lineage Certificate</div>
+            <div class="price">$3</div>
+            <p>Declare canonical continuation across forks or key rotations.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Continuity Certificate</h3>
-          <div class="price">$3</div>
-        </div>
-        <div class="card">
-          <h3>Lineage Certificate</h3>
-          <div class="price">$3</div>
+
+        <div class="note">
+          <strong>Beta incentive:</strong> First Identity Anchor + first 10 Continuity Certificates are free during beta.
+          <br/>Refunds may be considered prior to certificate issuance. Once issued, certificates cannot be revoked or refunded.
         </div>
       </div>
     </section>
-  
+
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Email: <strong>admin@ia-protocol.com</strong></p>
-        <p>Based in Germany – working internationally.</p>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="grid cards-2" style="margin-top:1rem;">
+          <div class="card">
+            <div class="meta">Email</div>
+            <h3>Get in touch</h3>
+            <p>
+              <a href="mailto:admin@ia-protocol.com">admin@ia-protocol.com</a>
+            </p>
+            <p style="margin-top:.6rem; color: var(--muted-2);">
+              Based in Germany. Working with clients internationally.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="meta">Billing & policies</div>
+            <h3>Stripe-ready</h3>
+            <p>
+              This site describes offered services and pricing, and provides the required legal pages.
+              See <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy</a>.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
