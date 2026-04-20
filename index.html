@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dirk Mischke – Software Engineering & Infrastructure Systems</title>
+  <title>Dirk Mischke – AI-Assisted Automation for German Businesses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Dirk Mischke – Full stack software engineer specializing in Python backend systems, API design, and infrastructure tooling." />
-  <link rel="stylesheet" href="style.css?v=1" />
+  <meta name="description" content="Custom workflow automation, knowledge systems, and AI agents — built by a developer with real business ownership experience." />
+  <meta property="og:title" content="Dirk Mischke – AI-Assisted Automation" />
+  <meta property="og:description" content="Custom workflow automation, knowledge systems, and AI agents — built by a developer with real business ownership experience." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
 
-  <header class="nav">
+  <header class="nav" id="nav">
     <div class="container nav-inner">
-      <div class="brand">
-        <div class="mark" aria-hidden="true"></div>
-        <div>
-          <div class="brand-name">Dirk Mischke</div>
-          <div class="brand-sub">Software Engineering & Infrastructure Systems</div>
-        </div>
-      </div>
+      <a href="#" class="brand-name">Dirk Mischke</a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
         <a href="#services">Services</a>
-        <a href="#iap">IAP</a>
-        <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
         <a href="impressum.html">Impressum</a>
       </nav>
@@ -30,180 +34,148 @@
   </header>
 
   <main>
+
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="kicker"><span class="dot" aria-hidden="true"></span> Independent software engineer · Germany</div>
-          <h1>Production-grade software <span style="color: var(--muted); font-weight: 730;">for modern web systems</span></h1>
-          <p class="lede">
-            I build backend-heavy web applications, API-first platforms, and infrastructure tooling.
-            My core stack includes <strong>Python (Flask)</strong>, <strong>OpenAPI/Swagger</strong>, <strong>MySQL/MariaDB</strong>,
-            and modern frontend development with <strong>Vue + TypeScript</strong>.
-          </p>
-
-          <div class="actions">
-            <a class="btn primary" href="#contact">Work with me</a>
-            <a class="btn" href="#iap">Identity Anchor Protocol</a>
-          </div>
+      <div class="container">
+        <h1>AI-assisted automation for small and mid-sized German businesses.</h1>
+        <p class="subline">Custom workflow automation, knowledge systems, and AI agents&nbsp;&mdash; built by a developer with real business ownership experience.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Let's talk</a>
+          <a class="btn secondary" href="#work">See my work</a>
         </div>
+      </div>
+    </section>
 
-        <aside class="panel" aria-label="Business details">
-          <h2>Business details</h2>
-          <div class="badge ok"><span class="dot" aria-hidden="true"></span> Available for projects</div>
-          <p>
-            Payments may be processed securely via Stripe. For details, see <a href="#pricing">pricing</a> and <a href="terms.html">terms</a>.
-          </p>
-          <hr class="sep" />
-          <p style="margin-top:0;">
-            <strong>Primary email:</strong><br/>
-            <a href="mailto:admin@ia-protocol.com">admin@ia-protocol.com</a>
-          </p>
-        </aside>
+    <section id="about" class="section">
+      <div class="container content">
+        <h2>About</h2>
+
+        <p>I spent over a decade in insurance and financial consulting&nbsp;&mdash; including running my own Allianz agency for five years, serving small and mid-sized businesses across the Ruhr region. That's where I learned how real companies operate: where money leaks, what owners worry about at 2&nbsp;a.m., and why most "solutions" from outside vendors don't fit how the business actually works.</p>
+
+        <p>In 2022 I retrained as a software developer through a coding bootcamp, turning a long-standing fascination with technology into a profession, and have been shipping production software since. Today I focus on AI-assisted automation, and I'm currently the sole technical lead on a major AI integration at a mid-size German consulting firm&nbsp;&mdash; covering meeting-to-document automation, knowledge vault architecture, and LLM-powered agent workflows.</p>
+
+        <p>What I offer is unusual: a developer who also speaks the language of business operations. I understand cash flow, staffing, client relationships, and the daily friction of running a company&nbsp;&mdash; because I've lived on that side of the desk. That means less time spent explaining your business to me, and more time building the solution.</p>
+
+        <p>I believe software development without AI assistance is no longer professionally responsible. AI is not a gimmick to bolt on top of existing processes&nbsp;&mdash; it's the leverage that lets a one-person engagement deliver what used to require a team.</p>
+
+        <p class="location">Based in the Ruhr region. Working remotely with clients across Germany and internationally.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <h2>Recent and current work</h2>
+
+        <div class="work-list">
+
+          <article class="work-item">
+            <span class="work-label">Current · Confidential</span>
+            <h3>AI integration for a mid-size German consulting firm</h3>
+            <p>Sole technical lead on an AI integration program. Meeting automation pipeline using n8n, Python scripts, and LLM orchestration feeding structured protocols and tasks into the client's project-management system. Knowledge vault architecture migrating a large number of structured portfolio components into an Obsidian-based system with retrieval-augmented generation for document drafting.</p>
+          </article>
+
+          <article class="work-item">
+            <span class="work-label">Automation · SME</span>
+            <h3>n8n workflow automation for a mid-size restaurant group</h3>
+            <p>Workflow automation engagement for a family-owned restaurant business (~30 staff) acquired through prior consulting relationships. Scoping, proposal, and implementation of operational automation using n8n on self-hosted infrastructure.</p>
+          </article>
+
+          <article class="work-item">
+            <span class="work-label">Product · Live</span>
+            <h3>Folio Business Command Center</h3>
+            <p>A standalone browser-based business operations tool covering quotes, projects, invoices, and P&amp;L&nbsp;&mdash; running entirely in the browser with no backend, using IndexedDB for persistence. Privacy-by-architecture. Demonstrates my approach to building lightweight, maintainable tools for small businesses.</p>
+            <a href="https://foliosupply.com" class="work-link">View at foliosupply.com &rarr;</a>
+          </article>
+
+          <article class="work-item">
+            <span class="work-label">Infrastructure · Open source</span>
+            <h3>Identity Anchor Protocol</h3>
+            <p>A cryptographic identity and continuity system for autonomous AI agents. Full-stack infrastructure project: REST API, Python SDK and CLI, certificate issuance and verification workflows, digital signatures, and a public registry. Designed, architected, and built independently.</p>
+            <a href="https://identityanchorprotocol.com" class="work-link">View at identityanchorprotocol.com &rarr;</a>
+          </article>
+
+        </div>
       </div>
     </section>
 
     <section id="services" class="section">
-      <div class="container">
-        <h2 class="section-title">Services</h2>
+      <div class="container content">
+        <h2>What I'm building&nbsp;&mdash; and how you can work with me</h2>
 
-        <div class="grid cards-3">
-          <div class="card">
-            <div class="meta">Software Development</div>
-            <h3>Backend & full stack implementation</h3>
-            <p>
-              Design and delivery of production web applications: REST APIs, database-driven systems,
-              frontend interfaces, integrations, refactors, and reliability improvements.
-            </p>
-          </div>
+        <p>I'm currently building my independent AI automation practice, alongside a major AI integration I'm leading for a mid-size German consulting firm.</p>
 
-          <div class="card">
-            <div class="meta">Technical Consulting</div>
-            <h3>Architecture & API design</h3>
-            <p>
-              Consulting on backend architecture, OpenAPI-first development,
-              data modeling, and pragmatic AI integrations.
-            </p>
-          </div>
+        <p>I'm taking on a small number of initial engagements at introductory rates while I build my portfolio of independent case studies. This means you get senior-level attention at a fraction of what established consultancies charge&nbsp;&mdash; and I get the real-world reference projects that let me grow this practice.</p>
 
-          <div class="card">
-            <div class="meta">Developer Tooling</div>
-            <h3>SDKs, CLIs & verification workflows</h3>
-            <p>
-              Building internal tools and developer-facing SDKs/CLIs with clear error handling,
-              predictable interfaces, and strong testing discipline.
-            </p>
-          </div>
-        </div>
+        <p>If your business has repetitive processes that eat time&nbsp;&mdash; document creation, meeting follow-ups, client onboarding, reporting, data entry between systems&nbsp;&mdash; I can probably automate them.</p>
+
+        <ul class="services-list">
+          <li>Workflow automation using n8n, Python, and AI</li>
+          <li>Internal tools that solve one specific operational pain point</li>
+          <li>Knowledge base setup for teams that need institutional knowledge organized</li>
+          <li>Process audit and automation roadmap</li>
+        </ul>
+
+        <p class="cta-line">How it starts: a 30-minute conversation to understand what you're dealing with. No cost, no obligation.</p>
       </div>
     </section>
 
-    <section id="iap" class="section">
+    <section class="section-stack">
       <div class="container">
-        <h2 class="section-title">Identity Anchor Protocol (IAP)</h2>
-        <p>
-          IAP provides cryptographic certificate issuance services for persistent autonomous agents, enabling verifiable identity and continuity over time.
-        </p>
-
-        <div class="grid cards-2" style="margin-top:1rem;">
-          <div class="card">
-            <div class="meta">What it is</div>
-            <h3>Identity & continuity primitives</h3>
-            <p>
-              Minimal primitives: Identity Anchor, Continuity Certificates, and Lineage declarations.
-              Certificates are digitally signed and verifiable offline using published registry keys.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="meta">How it works</div>
-            <h3>verifiable offline</h3>
-            <p>
-              Users initiate and receive anchor record. Once issued, a certificate becomes a verifiable cryptographic artifact.
-              See the quickstart below for a typical developer flow.
-            </p>
-          </div>
-        </div>
-
-        <div class="code" aria-label="Quickstart code sample">
-<pre><code>pip install iap-agent
-iap-agent init
-iap-agent anchor issue
-iap-agent flow run
-iap-agent verify certificate.json</code></pre>
-        </div>
+        <p class="stack-tags">Python · JavaScript/TypeScript · Vue · Flask · MySQL/MariaDB · OpenAPI · n8n · Obsidian · Nextcloud · LLM APIs · Qdrant · Docker · GitHub · Cloudflare</p>
       </div>
     </section>
 
-    <section id="pricing" class="section">
-      <div class="container">
-        <h2 class="section-title">The Three Records</h2>
-
-        <div class="pricing">
-          <div class="card">
-            <div class="meta">Identity Anchor</div>
-            
-            <p>Create a verifiable identity anchor for your agent.</p>
-          </div>
-
-          <div class="card">
-            <div class="meta">Continuity Certificate</div>
-            
-            <p>Attest verifiable continuity over time.</p>
-          </div>
-
-          <div class="card">
-            <div class="meta">Lineage Certificate</div>
-            
-            <p>Declare canonical continuation across forks or key rotations.</p>
-          </div>
-        </div>
-
-        <div class="note">
-          <strong>Beta incentive:</strong> First Identity Anchor + first 10 Continuity Certificates are free during beta.
-          
-        </div>
+    <section id="contact" class="section section-alt">
+      <div class="container content">
+        <h2>Let's talk</h2>
+        <p>If you're thinking about where AI could help your business, the easiest first step is a conversation.</p>
+        <a href="mailto:hello@dirk-mischke.com" class="email-link">hello@dirk-mischke.com</a>
+        <p class="location">Based in Germany. Working remotely with clients across Germany and internationally.</p>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="grid cards-2" style="margin-top:1rem;">
-          <div class="card">
-            <div class="meta">Email</div>
-            <h3>Get in touch</h3>
-            <p>
-              <a href="mailto:admin@ia-protocol.com">admin@ia-protocol.com</a>
-            </p>
-            <p style="margin-top:.6rem; color: var(--muted-2);">
-              Based in Germany. Working with clients internationally.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="meta">Billing & policies</div>
-            <h3>Stripe-ready</h3>
-            <p>
-              This site describes offered services and pricing, and provides the required legal pages.
-              See <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <p>
-          <a href="impressum.html">Impressum</a> ·
-          <a href="privacy.html">Privacy Policy</a> ·
-          <a href="terms.html">Terms of Service</a>
-        </p>
-        <p style="margin-top:.5rem;">© Dirk Mischke</p>
-      </div>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <a href="impressum.html">Impressum</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+      <p class="copyright">&copy; 2026 Dirk Mischke</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      links.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        toggle.setAttribute('aria-expanded', 'false');
+        links.classList.remove('open');
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
