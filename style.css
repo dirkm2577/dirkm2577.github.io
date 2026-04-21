@@ -108,6 +108,45 @@ h1, h2, h3 {
   transition: transform 0.2s, opacity 0.2s;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.lang-sep {
+  color: var(--border);
+  user-select: none;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.15rem 0.3rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-radius: 3px;
+  transition: color 0.15s;
+}
+.lang-btn:hover {
+  color: var(--text);
+}
+.lang-btn.active {
+  color: var(--navy);
+  font-weight: 600;
+}
+
 /* ── Hero ── */
 
 .hero {
